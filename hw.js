@@ -12,7 +12,6 @@
 //текст "Ми поїли"
 
 let humburger = 4;//гамбургер для вас і ще трьох друзів, тому 4
-
 let frenchFries = 1;//картоплю для одного чоловіка якщо слідувати умові
 
 if (humburger >= 4 && frenchFries >= 1){
@@ -24,7 +23,6 @@ if (humburger >= 4 && frenchFries >= 1){
 //текст "Ми йдемо в інше кафе"
 
 let humburger4 = 3;
-
 let frenchFries4 = 1;
 
 if (humburger4 >= 4 && frenchFries4 >= 1 ){
@@ -123,6 +121,7 @@ console.log('Season: ' + nameSeason);
 let a = 1;
 let b = 3;
 let c = 5;
+
 if((a<b && b<c)||(c<b && b<a)){
     console.log(b);
 }else if((a<c && c<b)||(b<c && c<a)){
@@ -243,7 +242,8 @@ console.log('Результат видалення голосних букв з�
 let numberMetr = 12000
 
 function km() {
-  let numberKm = numberMetr / 1000;
+  
+    let numberKm = numberMetr / 1000;
 
   if (Number.isInteger(numberKm)) {
     if (numberKm === 1 || numberKm % 10 === 1) {
