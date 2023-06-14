@@ -35,7 +35,7 @@ if (humburger4 >= 4 && frenchFries4 >= 1 ){
 //     Результат виводити в консоль.
 
 
-let price = 2000;
+let price = 1500;
 
 if(price >=1000 && price <=1900){
     console.log('Price is between 1000 and 1900: ' + price);
@@ -237,8 +237,7 @@ console.log('Результат видалення голосних букв з�
 
 //     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
 
-
-let numberMetr = 12000
+let numberMetr = 1140002
 
 function km() {
   
@@ -246,19 +245,17 @@ function km() {
 
   if (Number.isInteger(numberKm)) {
     if (numberKm === 1 || numberKm % 10 === 1) {
-        if (numberKm === 11) {
+        if (numberKm === 11 || numberKm % 100 === 11) {
             return numberKm + ' кілометрів';
           }
       return numberKm + ' кілометр';
     } else if (
-      numberKm === 2 ||
-      numberKm === 3 ||
-      numberKm === 4 ||
-      numberKm % 10 === 2 ||
-      numberKm % 10 === 3 ||
-      numberKm % 10 === 4
-    ) {
-      if (numberKm === 12 || numberKm === 13 || numberKm === 14) {
+        (numberKm >= 2 && numberKm <= 4) ||
+        (numberKm % 10 >= 2 && numberKm % 10 <= 4)
+     ){
+      if ((numberKm >= 12 && numberKm <= 14) ||
+      (numberKm % 100 >= 12 && numberKm % 100 <= 14)
+            ) {
         return numberKm + ' кілометрів';
       }
       return numberKm + ' кілометри';
