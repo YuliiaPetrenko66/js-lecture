@@ -9,57 +9,40 @@
 //     то виводити в консоль текст "Ми йдемо в інше кафе"
 //     (Змінні типу інтеджер містять кількість продуктів в наявності у вигляді вхідних даних)
 
+//текст "Ми поїли"
 
-//текст "Ми поїли" 
-let humburger = true;
-let frenchFries = true;
-if (humburger === true && frenchFries === true ){
+let humburger = 4;//гамбургер для вас і ще трьох друзів, тому 4
+
+let frenchFries = 1;//картоплю для одного чоловіка якщо слідувати умові
+
+if (humburger >= 4 && frenchFries >= 1){
     console.log('Ми поїли');
 }else{
     console.log('Ми йдемо в інше кафе');  
 }
-
-//текст "Ми поїли", перевірка
-
-let humburger2 = 4;//гамбургер для вас і ще трьох друзів, тому 4
-let frenchFries2 = 1;//картоплю тільки для одного чоловіка якщо слідувати умові
-if (humburger2 >= 4 && frenchFries2 >= 1 ){
-    console.log('Ми поїли');
-}else{
-    console.log('Ми йдемо в інше кафе');  
-}
-
 
 //текст "Ми йдемо в інше кафе"
-let humburger1 = true;
-let frenchFries1 = false;
-if (humburger1 === true && frenchFries1 === true ){
-    console.log('Ми поїли');
-}else{
-    console.log('Ми йдемо в інше кафе');  
-}
-
-//текст "Ми йдемо в інше кафе", перевірка
 
 let humburger4 = 3;
+
 let frenchFries4 = 1;
+
 if (humburger4 >= 4 && frenchFries4 >= 1 ){
     console.log('Ми поїли');
 }else{
     console.log('Ми йдемо в інше кафе');  
 }
 
-
-
 // 2.  Напишіть умовну конструкцію if, що перевіряє, чи знаходиться значення ціни товару між 1000 та 1900 включно.
 //     Результат виводити в консоль.
 
 
-let price1 = 2000;
-if(price1 >=1000 && price1 <=1900){
-    console.log('Price is included: ' + price1);
+let price = 2000;
+
+if(price >=1000 && price <=1900){
+    console.log('Price is between 1000 and 1900: ' + price);
 }else{
-    console.log('Price is not included');
+    console.log('Price is not between 1000 and 1900: ' + price);
 }
 
 // 3.  Напишіть конструкцію if, щоб перевіряє, чи значення ціни товару не знаходиться між 1000 та 1900 включно.
@@ -68,22 +51,23 @@ if(price1 >=1000 && price1 <=1900){
 
 //без оператора НЕ !
 
-let priceProduct5 = 5500;
-if (priceProduct5 < 1000 || priceProduct5 > 1900) {
-    console.log('Price is not between 1000 and 1900: ' + priceProduct5);
+let priceProduct = 4500;
+
+if (priceProduct < 1000 || priceProduct > 1900) {
+    console.log('Price is not between 1000 and 1900: ' + priceProduct);
 } else {
-    console.log('Price is between 1000 and 1900: ' + priceProduct5);
+    console.log('Price is between 1000 and 1900: ' + priceProduct);
 }
 
 
 //з оператором НЕ !
 
-let priceProduct2 = 1500;
+let priceProd = 2900;
 
-if (!(priceProduct2 >= 1000 || priceProduct2 <= 1900)) {
-    console.log('Price is not between 1000 and 1900: ' + priceProduct2);
+if (!(priceProd >= 1000 && priceProd <= 1900)) {
+    console.log('Price is not between 1000 and 1900: ' + priceProd);
 } else {
-    console.log('Price is between 1000 and 1900: ' + priceProduct2);
+    console.log('Price is between 1000 and 1900: ' + priceProd);
 }
 
 
@@ -93,7 +77,7 @@ if (!(priceProduct2 >= 1000 || priceProduct2 <= 1900)) {
 
 // 1-ший варіант
 
-let seasonNum = 3;
+let seasonNum = 1;
 
 if (seasonNum === 1) {
     console.log('Spring');
@@ -104,12 +88,12 @@ if (seasonNum === 1) {
 } else if (seasonNum === 4) {
     console.log('Winter');
 } else {
-    console.log('Not the season');
+    console.log('Not a season');
 }
 
 // 2-гий варіант
 
-let numberSeason = 2;
+let numberSeason = 3;
 let nameSeason;
 
 if (numberSeason === 1) {
@@ -137,7 +121,7 @@ console.log('Season: ' + nameSeason);
 // 1-ший варіант
 
 let a = 1;
-let b = 7;
+let b = 3;
 let c = 5;
 if((a<b && b<c)||(c<b && b<a)){
     console.log(b);
@@ -149,7 +133,7 @@ if((a<b && b<c)||(c<b && b<a)){
 
 // 2-гий варіант
 
-let a1 = 9;
+let a1 = 8;
 let b1 = 10;
 let c1 = 7;
 
@@ -178,7 +162,7 @@ if (a1 > b1) {
 //     Результат виводити в консоль.
 
 
-let dayWeek = 5;
+let dayWeek = 4;
 
 switch(dayWeek){
     case 1:
