@@ -237,39 +237,6 @@ console.log(`Результат видалення голосних букв з�
 
 //     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
 
-// let numberMetr = 1140002
-
-// function km() {
-  
-//     let numberKm = numberMetr / 1000;
-
-//   if (Number.isInteger(numberKm)) {
-//     if (numberKm === 1 || numberKm % 10 === 1) {
-//         if (numberKm === 11 || numberKm % 100 === 11) {
-//             return numberKm + ' кілометрів';
-//           }
-//       return numberKm + ' кілометр';
-//     } else if (
-//         (numberKm >= 2 && numberKm <= 4) ||
-//         (numberKm % 10 >= 2 && numberKm % 10 <= 4)
-//      ){
-//       if ((numberKm >= 12 && numberKm <= 14) ||
-//       (numberKm % 100 >= 12 && numberKm % 100 <= 14)
-//             ) {
-//         return numberKm + ' кілометрів';
-//       }
-//       return numberKm + ' кілометри';
-//     } else {
-//       return numberKm + ' кілометрів';
-//     }
-//   } else {
-//     return numberKm + ' кілометра';
-//   }
-// }
-
-// console.log(km());
-
-
 
 let numberMetr = 5.140078;
 
@@ -334,13 +301,4 @@ function convertDistance() {
 }
 
 console.log(convertDistance());
-
-
-
-
-
-
-
-
-
 
