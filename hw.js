@@ -53,13 +53,13 @@ if (humburger4 >= 4 && frenchFries4 >= 1 ){
 
 let price = 1000;
 if(price>=1000 && price <=1900){
-    console.log(price);
+    console.log('Price is included: ' + price);
 }
 
 
 let price1 = 2000;
 if(price1 >=1000 && price1 <=1900){
-    console.log('Price is included' + price1);
+    console.log('Price is included: ' + price1);
 }else{
     console.log('Price is not included');
 }
@@ -69,107 +69,62 @@ if(price1 >=1000 && price1 <=1900){
 //     Результат виводити в консоль.
 
 //без оператора НЕ !
-let priceProduct = 1000;
-if((priceProduct !== 1000 && priceProduct < 1000) || (priceProduct !==1900 && priceProduct > 1900)){
-    console.log('Price is not between 1000 and 1900: ' + priceProduct);
-}else{
-    console.log('Price is between 1000 and 1900: ' + priceProduct);
-}
 
-let priceProduct5 = 1500;
+let priceProduct5 = 5500;
 if (priceProduct5 < 1000 || priceProduct5 > 1900) {
     console.log('Price is not between 1000 and 1900: ' + priceProduct5);
 } else {
     console.log('Price is between 1000 and 1900: ' + priceProduct5);
 }
 
+
 //з оператором НЕ !
 
-let priceProduct4 = 1900;
-if (!(priceProduct4 >= 1000 && priceProduct4 <= 1900)) {
-    console.log('Price is not between 1000 and 1900: ' + priceProduct4);
+let priceProduct2 = 1500;
+
+if (!(priceProduct2 >= 1000 || priceProduct2 <= 1900)) {
+    console.log('Price is not between 1000 and 1900: ' + priceProduct2);
 } else {
-    console.log('Price is between 1000 and 1900: ' + priceProduct4);
+    console.log('Price is between 1000 and 1900: ' + priceProduct2);
 }
+
 
 
 // 4.  За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
 //     Результат виводити в консоль.
 
-let month = 10;
-if (month === 1){
-    console.log('January');
-} else if (month === 2){
-    console.log('February');
-}else if (month === 3){
-    console.log('March');
-}else if (month === 4){
-    console.log('April');
-}else if (month === 5){
-    console.log('May');
-}else if (month === 6){
-    console.log('June');
-}else if (month === 7){
-    console.log('July');
-}else if (month === 8){
-    console.log('August');
-}else if (month === 9){
-    console.log('September');
-}else if (month === 10){
-    console.log('October');
-}else if (month === 11){
-    console.log('November');
-}else if (month === 12){
-    console.log('December');
-}else{
-    console.log('Not a month');
+
+let seasonNum = 3;
+
+if (seasonNum === 1) {
+    console.log('Spring');
+} else if (seasonNum === 2) {
+    console.log('Summer');
+} else if (seasonNum === 3) {
+    console.log('Autumn');
+} else if (seasonNum === 4) {
+    console.log('Winter');
+} else {
+    console.log('Not the season');
 }
 
 
-let month12 = 10;
-switch(month12){
-    case 1:
-        console.log('Month: January');
-        break;
+let numberSeason = 2;
+let nameSeason;
 
-    case 2:
-        console.log('Month: February');
-        break;
-
-    case 3:
-        console.log('Month: March');
-        break;
-    case 4:
-        console.log('Month: April');
-        break;
-    case 5:
-        console.log('Month: May');
-        break;
-    case 6:
-        console.log('Month: June');
-        break; 
-    case 7:
-        console.log('Month: July');
-        break; 
-    case 8:
-        console.log('Month: August');
-        break; 
-    case 9:
-        console.log('Month: September');
-        break; 
-    case 10:
-        console.log('Month: October');
-        break; 
-    case 11:
-        console.log('Month: November');
-        break;
-    case 12:
-        console.log('Month: December');
-        break;                            
-    default:
-        console.log('Not a montht');
-        break;
+if (numberSeason === 1) {
+    nameSeason = 'Spring';
+} else if (numberSeason === 2) {
+    nameSeason = 'Summer';
+} else if (numberSeason === 3) {
+    nameSeason = 'Autumn';
+} else if (numberSeason === 4) {
+    nameSeason = 'Winter';
+} else {
+    nameSeason = 'Unknown season';
 }
+
+console.log('Season: ' + nameSeason);
 
 
 
@@ -179,12 +134,50 @@ switch(month12){
 //     Використати вкладені оператори if
 //     Результат виводити в консоль.
 
+
+let a = 1;
+let b = 7;
+let c = 5;
+if((a<b && b<c)||(c<b && b<a)){
+    console.log(b);
+}else if((a<c && c<b)||(b<c && c<a)){
+    console.log(c);
+}else {
+    console.log(a);
+}
+
+
+let a1 = 9;
+let b1 = 10;
+let c1 = 7;
+
+if (a1 > b1) {
+    if (b1 > c1) {
+        console.log(b1);
+    } else if (a1 > c1) {
+        console.log(c1);
+    } else {
+        console.log(a1);
+    }
+} else {
+    if (a1 > c1) {
+        console.log(a1);
+    } else if (b1 > c1) {
+        console.log(c1);
+    } else {
+        console.log(b1);
+    }
+}
+
+
+
 // 6.  Задано номер дня тижня.
 //     За заданим номером вивести назву дня тижня використовуючи switch.
 //     Результат виводити в консоль.
 
 
-let dayWeek = 3;
+let dayWeek = 5;
+
 switch(dayWeek){
     case 1:
         console.log('Day of the week: Monday');
@@ -208,7 +201,7 @@ switch(dayWeek){
         console.log('Day of the week: Sunday');
         break;                            
     default:
-        console.log('Not a day');
+        console.log('Not a day of the week');
         break;
 }
 
@@ -216,10 +209,82 @@ switch(dayWeek){
 //     Математичні операції для обчислення: "+", "-", "*", "/".
 //     Результат виводити в консоль.
 
+
+let mathOperation = "/";
+let num1 = 6;
+let num2 = 2;
+let output;
+
+switch(mathOperation){
+    case "+":
+        output = num1 + num2;
+        console.log('Math operations "+": ', output);
+        break;
+    case "-":
+        output = num1 - num2;
+        console.log('Math operations "-": ',output);
+        break;
+    case "*":
+        output = num1 * num2;
+        console.log('Math operations "*": ',output);
+        break;
+    case "/":
+        output = num1 / num2;
+        console.log('Math operations "/": ',output);
+        break;
+                              
+    default:
+        console.log('Not a mathOperation');
+        break;
+}
+
 // 8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
+
+let str = "Індустріалізація";
+
+let newResult = str.replace(/[іуая]/gi, '');
+
+console.log('Результат видалення голосних букв зі слова "Індустріалізація": ' + '"' + newResult + '"');
+
 
 // 9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
 //     так щоб в консоль виводився результат обчислень з правильним закінченням.
 //     Наприклад: 1000 метрів це 1 кілометр;  32 метри це 0,032 кілометра і т.д.
 
 //     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
+
+
+let numberMetr = 12000
+
+function km() {
+  let numberKm = numberMetr / 1000;
+
+  if (Number.isInteger(numberKm)) {
+    if (numberKm === 1 || numberKm % 10 === 1) {
+        if (numberKm === 11) {
+            return numberKm + ' кілометрів';
+          }
+      return numberKm + ' кілометр';
+    } else if (
+      numberKm === 2 ||
+      numberKm === 3 ||
+      numberKm === 4 ||
+      numberKm % 10 === 2 ||
+      numberKm % 10 === 3 ||
+      numberKm % 10 === 4
+    ) {
+      if (numberKm === 12 || numberKm === 13 || numberKm === 14) {
+        return numberKm + ' кілометрів';
+      }
+      return numberKm + ' кілометри';
+    } else {
+      return numberKm + ' кілометрів';
+    }
+  } else {
+    return numberKm + ' кілометра';
+  }
+}
+
+console.log(km());
+
+
