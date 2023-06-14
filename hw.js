@@ -228,7 +228,7 @@ switch(mathOperation){
 let str = "Індустріалізація";
 let newResult = str.replace(/[іуая]/gi, '');
 
-console.log('Результат видалення голосних букв зі слова "Індустріалізація": ' + '"' + newResult + '"');
+console.log(`Результат видалення голосних букв зі слова  ${str}:  ${newResult} `);
 
 
 // 9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
@@ -237,36 +237,110 @@ console.log('Результат видалення голосних букв з�
 
 //     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
 
-let numberMetr = 1140002
+// let numberMetr = 1140002
 
-function km() {
+// function km() {
   
-    let numberKm = numberMetr / 1000;
+//     let numberKm = numberMetr / 1000;
+
+//   if (Number.isInteger(numberKm)) {
+//     if (numberKm === 1 || numberKm % 10 === 1) {
+//         if (numberKm === 11 || numberKm % 100 === 11) {
+//             return numberKm + ' кілометрів';
+//           }
+//       return numberKm + ' кілометр';
+//     } else if (
+//         (numberKm >= 2 && numberKm <= 4) ||
+//         (numberKm % 10 >= 2 && numberKm % 10 <= 4)
+//      ){
+//       if ((numberKm >= 12 && numberKm <= 14) ||
+//       (numberKm % 100 >= 12 && numberKm % 100 <= 14)
+//             ) {
+//         return numberKm + ' кілометрів';
+//       }
+//       return numberKm + ' кілометри';
+//     } else {
+//       return numberKm + ' кілометрів';
+//     }
+//   } else {
+//     return numberKm + ' кілометра';
+//   }
+// }
+
+// console.log(km());
+
+
+
+let numberMetr = 5.140078;
+
+function convertDistance() {
+  let numberKm = numberMetr / 1000;
+  let outputKm;
+  let outputMetr;
 
   if (Number.isInteger(numberKm)) {
     if (numberKm === 1 || numberKm % 10 === 1) {
-        if (numberKm === 11 || numberKm % 100 === 11) {
-            return numberKm + ' кілометрів';
-          }
-      return numberKm + ' кілометр';
-    } else if (
-        (numberKm >= 2 && numberKm <= 4) ||
-        (numberKm % 10 >= 2 && numberKm % 10 <= 4)
-     ){
-      if ((numberKm >= 12 && numberKm <= 14) ||
-      (numberKm % 100 >= 12 && numberKm % 100 <= 14)
-            ) {
-        return numberKm + ' кілометрів';
+      if (numberKm === 11 || numberKm % 100 === 11) {
+        outputKm = `${numberKm} кілометрів`;
+      } else {
+        outputKm = `${numberKm} кілометр`;
       }
-      return numberKm + ' кілометри';
+    } else if (
+      (numberKm >= 2 && numberKm <= 4) ||
+      (numberKm % 10 >= 2 && numberKm % 10 <= 4)
+    ) {
+      if (
+        (numberKm >= 12 && numberKm <= 14) ||
+        (numberKm % 100 >= 12 && numberKm % 100 <= 14)
+      ) {
+        outputKm = `${numberKm} кілометрів`;
+      } else {
+        outputKm = `${numberKm} кілометри`;
+      }
     } else {
-      return numberKm + ' кілометрів';
+      outputKm = `${numberKm} кілометрів`;
     }
   } else {
-    return numberKm + ' кілометра';
+    outputKm = `${numberKm} кілометра`;
   }
+
+  if (Number.isInteger(numberMetr)) {
+    if (numberMetr === 1 || numberMetr % 10 === 1) {
+      if (numberMetr === 11 || numberMetr % 100 === 11) {
+        outputMetr = `${numberMetr} метрів`;
+      } else {
+        outputMetr = `${numberMetr} метр`;
+      }
+    } else if (
+      (numberMetr >= 2 && numberMetr <= 4) ||
+      (numberMetr % 10 >= 2 && numberMetr % 10 <= 4)
+    ) {
+      if (
+        (numberMetr >= 12 && numberMetr <= 14) ||
+        (numberMetr % 100 >= 12 && numberMetr % 100 <= 14)
+      ) {
+        outputMetr = `${numberMetr} метрів`;
+      } else {
+        outputMetr = `${numberMetr} метри`;
+      }
+    } else {
+      outputMetr = `${numberMetr} метрів`;
+    }
+  } else {
+    outputMetr = `${numberMetr} метра`;
+  }
+
+  return `${outputMetr} це ${outputKm}`;
 }
 
-console.log(km());
+console.log(convertDistance());
+
+
+
+
+
+
+
+
 
 
