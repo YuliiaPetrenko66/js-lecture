@@ -10,7 +10,7 @@
 //     (Змінні типу інтеджер містять кількість продуктів в наявності у вигляді вхідних даних)
 
 
-//текст "Ми поїли". 
+//текст "Ми поїли" 
 let humburger = true;
 let frenchFries = true;
 if (humburger === true && frenchFries === true ){
@@ -18,6 +18,8 @@ if (humburger === true && frenchFries === true ){
 }else{
     console.log('Ми йдемо в інше кафе');  
 }
+
+//текст "Ми поїли", перевірка
 
 let humburger2 = 4;//гамбургер для вас і ще трьох друзів, тому 4
 let frenchFries2 = 1;//картоплю тільки для одного чоловіка якщо слідувати умові
@@ -37,6 +39,7 @@ if (humburger1 === true && frenchFries1 === true ){
     console.log('Ми йдемо в інше кафе');  
 }
 
+//текст "Ми йдемо в інше кафе", перевірка
 
 let humburger4 = 3;
 let frenchFries4 = 1;
@@ -50,11 +53,6 @@ if (humburger4 >= 4 && frenchFries4 >= 1 ){
 
 // 2.  Напишіть умовну конструкцію if, що перевіряє, чи знаходиться значення ціни товару між 1000 та 1900 включно.
 //     Результат виводити в консоль.
-
-let price = 1000;
-if(price>=1000 && price <=1900){
-    console.log('Price is included: ' + price);
-}
 
 
 let price1 = 2000;
@@ -93,6 +91,7 @@ if (!(priceProduct2 >= 1000 || priceProduct2 <= 1900)) {
 // 4.  За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
 //     Результат виводити в консоль.
 
+// 1-ший варіант
 
 let seasonNum = 3;
 
@@ -108,6 +107,7 @@ if (seasonNum === 1) {
     console.log('Not the season');
 }
 
+// 2-гий варіант
 
 let numberSeason = 2;
 let nameSeason;
@@ -134,6 +134,7 @@ console.log('Season: ' + nameSeason);
 //     Використати вкладені оператори if
 //     Результат виводити в консоль.
 
+// 1-ший варіант
 
 let a = 1;
 let b = 7;
@@ -146,6 +147,7 @@ if((a<b && b<c)||(c<b && b<a)){
     console.log(a);
 }
 
+// 2-гий варіант
 
 let a1 = 9;
 let b1 = 10;
