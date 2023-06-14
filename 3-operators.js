@@ -90,6 +90,12 @@ if (humburgers > 2 && cola || nuggets > 1 && friesPotatos > 1){
 
 
 
-
-
+function mcDonalds(humburgers, cola, nuggets, friesPotatos  ){
+    if (humburgers > 2 && cola || nuggets > 1 && friesPotatos > 1){
+        console.log('Всі поїли')
+    }else{
+        console.log('Не всі поїли')
+    }
+}
+mcDonalds(2,1,2,1);
 
