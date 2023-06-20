@@ -20,6 +20,25 @@ if (humburger >= 4 && frenchFries >= 1){
     console.log('Ми йдемо в інше кафе');  
 }
 
+
+// Function - Homework 21.06.2023
+
+function restaurant(humburger1, frenchFries1){
+
+if (humburger1 >= 4 && frenchFries1 >= 1){
+    return 'Ми поїли';
+}else{
+    return 'Ми йдемо в інше кафе';  
+}
+}
+
+let humburger1 = 4;
+let frenchFries1 = 1;
+let restaurantResult = restaurant(humburger1, frenchFries1);
+
+console.log(restaurantResult); 
+
+
 //текст "Ми йдемо в інше кафе"
 
 let humburger4 = 3;
@@ -30,6 +49,25 @@ if (humburger4 >= 4 && frenchFries4 >= 1 ){
 }else{
     console.log('Ми йдемо в інше кафе');  
 }
+
+// Function - Homework 21.06.2023
+
+function restaurant2(humburger2, frenchFries2){
+
+if (humburger2 >= 4 && frenchFries2 >= 1 ){
+    return 'Ми поїли';
+}else{
+    return 'Ми йдемо в інше кафе';  
+}
+}
+
+let humburger2 = 2;
+let frenchFries2 = 1;
+let restaurant2Result = restaurant2(humburger2, frenchFries2);
+
+console.log(restaurant2Result); 
+
+
 
 // 2.  Напишіть умовну конструкцію if, що перевіряє, чи знаходиться значення ціни товару між 1000 та 1900 включно.
 //     Результат виводити в консоль.
@@ -42,6 +80,24 @@ if(price >=1000 && price <=1900){
 }else{
     console.log('Price is not between 1000 and 1900: ' + price);
 }
+
+
+// Function - Homework 21.06.2023
+
+function checkPrice (price1){
+
+if(price1 >=1000 && price1 <=1900){
+    return'Price is between 1000 and 1900: ' + price1;
+}else{
+    return 'Price is not between 1000 and 1900: ' + price1;
+}
+}
+
+let price1 = 1500;
+let checkPriceResult = checkPrice(1500);
+
+console.log(checkPriceResult);
+
 
 // 3.  Напишіть конструкцію if, щоб перевіряє, чи значення ціни товару не знаходиться між 1000 та 1900 включно.
 //     Реалізуйте два варіанти, один з оператором НЕ !, а інший без цього оператора.
@@ -58,6 +114,23 @@ if (priceProduct < 1000 || priceProduct > 1900) {
 }
 
 
+// Function - Homework 21.06.2023
+
+function checkpriceProduct(price_Prod){
+
+if (price_Prod < 1000 || price_Prod > 1900) {
+    return 'Price is not between 1000 and 1900: ' + price_Prod;
+} else {
+    return'Price is between 1000 and 1900: ' + price_Prod;
+}
+}
+
+let price_Prod = 4500;
+let checkPricePr = checkpriceProduct(price_Prod);
+
+console.log(checkPricePr);
+
+
 //з оператором НЕ !
 
 let priceProd = 2900;
@@ -68,6 +141,21 @@ if (!(priceProd >= 1000 && priceProd <= 1900)) {
     console.log('Price is between 1000 and 1900: ' + priceProd);
 }
 
+// Function - Homework 21.06.2023
+
+function checkPriceProd(pricePr){
+
+if (!(priceProd >= 1000 && priceProd <= 1900)) {
+    return 'Price is not between 1000 and 1900: ' + pricePr;
+} else {
+    return 'Price is between 1000 and 1900: ' + pricePr;
+}
+}
+
+let pricePr = 2900;
+let checkPP = checkPriceProd(pricePr);
+
+console.log(checkPP);
 
 
 // 4.  За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
@@ -89,6 +177,30 @@ if (seasonNum === 1) {
     console.log('Not a season');
 }
 
+ 
+// Function - Homework 21.06.2023
+
+function checkSeasonNum(seasonNum1){
+
+if (seasonNum1 === 1) {
+    return 'Spring';
+} else if (seasonNum1 === 2) {
+    return'Summer';
+} else if (seasonNum1 === 3) {
+    return'Autumn';
+} else if (seasonNum1 === 4) {
+    return'Winter';
+} else {
+    return'Not a season';
+}
+}
+
+let seasonNum1 = 1;
+let checkSN = checkSeasonNum(seasonNum1);
+
+console.log(checkSN);
+
+
 // 2-гий варіант
 
 let numberSeason = 3;
@@ -107,6 +219,33 @@ if (numberSeason === 1) {
 }
 
 console.log('Season: ' + nameSeason);
+
+//Function - Homework 21.06.2023
+
+function checkNumberSeason(numberSeason1){
+
+let nameSeason1;
+
+if (numberSeason1 === 1) {
+    nameSeason1 = 'Spring';
+} else if (numberSeason1 === 2) {
+    nameSeason1 = 'Summer';
+} else if (numberSeason1 === 3) {
+    nameSeason1 = 'Autumn';
+} else if (numberSeason1 === 4) {
+    nameSeason1 = 'Winter';
+} else {
+    nameSeason1 = 'Unknown season';
+}
+return nameSeason1;
+
+}
+
+let numberSeason1 = 3;
+let nameSeason1 = checkNumberSeason(numberSeason1);
+
+console.log('Season: ' + nameSeason1);
+
 
 
 
@@ -129,6 +268,26 @@ if((a<b && b<c)||(c<b && b<a)){
 }else {
     console.log(a);
 }
+
+//Function - Homework 21.06.2023
+
+function checkNumber(a3,b3,c3){
+
+if((a3<b3 && b3<c3)||(c3<b3 && b3<a3)){
+    return b3;
+}else if((a3<c3 && c3<b3)||(b3<c3 && c3<a3)){
+    return c3;
+}else {
+    return a3;
+}
+}
+
+let a3 = 1;
+let b3 = 3;
+let c3 = 5;
+let checkNumb = checkNumber(a3,b3,c3);
+
+console.log(checkNumb);
 
 // 2-гий варіант
 
@@ -154,6 +313,37 @@ if (a1 > b1) {
     }
 }
 
+
+
+//Function - Homework 21.06.2023
+
+function checkNum(a2,b2,c2){
+
+if (a2 > b2) {
+    if (b2 > c2) {
+        return b2;
+    } else if (a2 > c2) {
+        return c2;
+    } else {
+        return a2;
+    }
+} else {
+    if (a2 > c2) {
+        return a2;;
+    } else if (b2 > c2) {
+        return c2;;
+    } else {
+        return b2;
+    }
+}
+}
+
+let a2 = 8;
+let b2 = 10;
+let c2 = 7;
+let checkN = checkNum(a2,b2,c2);
+
+console.log(checkN);
 
 
 // 6.  Задано номер дня тижня.
@@ -190,6 +380,34 @@ switch(dayWeek){
         break;
 }
 
+//Function - Homework 21.06.2023
+
+function dayOfWeek(day) {
+    switch (day) {
+      case 1:
+        return 'Monday';
+      case 2:
+        return 'Tuesday';
+      case 3:
+        return 'Wednesday';
+      case 4:
+        return 'Thursday';
+      case 5:
+        return 'Friday';
+      case 6:
+        return 'Saturday';
+      case 7:
+        return 'Sunday';
+      default:
+        return 'Not a day of the week';
+    }
+  }
+
+  let day = 4;
+  let dayResult = dayOfWeek(day);
+
+  console.log('Day of the week:', dayResult);
+
 // 7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
 //     Математичні операції для обчислення: "+", "-", "*", "/".
 //     Результат виводити в консоль.
@@ -223,6 +441,37 @@ switch(mathOperation){
         break;
 }
 
+
+//Function - Homework 21.06.2023
+
+function math_Operation(mathOperation1, numb2, num3) {
+    let output;
+  
+    switch (mathOperation1) {
+      case "+":
+        output = numb2 + num3;
+        return 'Math operation "+": ' + output;
+      case "-":
+        output = numb2 - num3;
+        return 'Math operation "-": ' + output;
+      case "*":
+        output = numb2 * num3;
+        return 'Math operation "*": ' + output;
+      case "/":
+        output = numb2 / num3;
+        return 'Math operation "/": ' + output;
+      default:
+        return 'Not a mathOperation';
+    }
+  }
+  
+  let mathOperation1 = "/";
+  let numb2 = 6;
+  let num3 = 2;
+  let mathOperationResult = math_Operation(mathOperation1, numb2, num3);
+
+  console.log(mathOperationResult);
+
 // 8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
 
 let str = "Індустріалізація";
@@ -231,14 +480,26 @@ let newResult = str.replace(/[іуая]/gi, '');
 console.log(`Результат видалення голосних букв зі слова  ${str}:  ${newResult} `);
 
 
+//Function - Homework 21.06.2023
+
+function regularExpr(str1){
+
+let newResult = str1.replace(/[іуая]/gi, '');
+
+return`Результат видалення голосних букв зі слова  ${str1}:  ${newResult} `;
+}
+
+let str1 = "Індустріалізація";
+let result = regularExpr(str1);
+
+console.log(result);
+
 // 9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
 //     так щоб в консоль виводився результат обчислень з правильним закінченням.
 //     Наприклад: 1000 метрів це 1 кілометр;  32 метри це 0,032 кілометра і т.д.
 
 //     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
 
-
-let numberMetr = 5.140078;
 
 function convertDistance() {
   let numberKm = numberMetr / 1000;
@@ -300,5 +561,36 @@ function convertDistance() {
   return `${outputMetr} це ${outputKm}`;
 }
 
+let numberMetr = 5.140078;
+
 console.log(convertDistance());
+
+
+
+
+
+
+
+// let metr = 5001
+// let kilometr = metr / 1000
+
+// function metryToKilometry(number) {
+
+//     if (number === Math.round(number)) {
+//         if (number >= 5 && number <= 19) {
+//             return "ів"
+//         } else if (number % 10 === 1) {
+//             return " "
+//         } else if ((number >= 2 && number <= 4) || (number % 10 >= 2 && number % 10 <= 4)) {
+//             return "и"
+//         } else if (number % 10 === 0 || number % 10 >= 5 && number % 10 <= 10) {
+//             return "ів"
+//         }
+//     }
+//     else {
+//         return "a"
+//     }
+// }
+
+// console.log(metr + " метр" + metryToKilometry(metr) + " = " + kilometr + " кілометр" + metryToKilometry(kilometr))
 
